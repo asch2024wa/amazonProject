@@ -5,6 +5,7 @@ import { BiCart } from "react-icons/bi";
 import classes from "./Header.module.css"
 import LowerHeader from './LowerHeader';
 import Amazonlogo from ".././Carousel/images/amazon.png"
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -16,7 +17,7 @@ function Header() {
         
           {/* {amazonlogo} */}
         
-           <a href="/" ><img src={Amazonlogo} alt="amazon logo"/></a>
+           <Link to="/" ><img src={Amazonlogo} alt="amazon logo"/></Link>
             {/* delivery */}
             
             <div className={classes.delivery}>
@@ -49,14 +50,14 @@ function Header() {
           
          <div className={classes.order_container}> 
         
-            <a href="" className={classes.language}>
+            <Link to="/" className={classes.language}>
            <img src="https://s.yimg.com/fz/api/res/1.2/qbJ8HrUw55B2wYLrbHp4wA--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI2MDtxPTgwO3c9MzMy/https://s.yimg.com/zb/imgv1/c1353091-7a99-3eeb-8652-ab49a2c7c46e/t_500x300" alt="" />
            <select name="" id="">
             <option value="">EN</option>
            </select>
-            </a> 
+            </Link> 
            {/* three  componenets */}
-           <a href="/">
+           <Link to="/Auth">
              <div>
                 <p>Sign In</p>
                 <span>Accounts & Lists
@@ -64,16 +65,16 @@ function Header() {
                 </span>
              </div>
 
-           </a>
-           <a href="/orders">
+           </Link>
+           <Link to="/Orders">
             <p>return</p>
             <span> &orders</span>
-           </a>
-           <a href="/cart" className={classes.cart}>
+           </Link>
+           <Link to="/Cart" className={classes.cart}>
             <span>0</span>
             <BiCart  size={25}/>
 
-           </a>
+           </Link>
            
         </div>
 
