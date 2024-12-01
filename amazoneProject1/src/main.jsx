@@ -5,6 +5,8 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <DataProvider reducer={reducer} initialState={initialState}>
     <App />
+   </ DataProvider>
   </StrictMode>,
 )
