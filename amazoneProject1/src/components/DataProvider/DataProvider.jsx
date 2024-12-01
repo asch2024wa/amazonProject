@@ -1,4 +1,4 @@
-import{creatContext,useReducer} from "react"
+import{creatContext,createContext,useReducer} from "react"
 import { initialState } from "../../Utility/reducer"
 export const DataContext=createContext()
 export const DataProvider=({children,reducer,initialState})=>{

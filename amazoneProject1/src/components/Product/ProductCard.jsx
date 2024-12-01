@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import classes from "./Product.module.css";
 import CurrencyFormatter from "../CurrencyFormatter/CurrencyFormatter";
 import Rating from "@mui/material/Rating";

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { FaSearch } from "react-icons/fa";
 import { SlLocationPin } from "react-icons/sl";
 import { BiCart } from "react-icons/bi";
@@ -64,7 +64,7 @@ function Header() {
               <span> &orders</span>
             </Link>
             <Link to="/Cart" className={classes.cart}>
-              <span>{Basket.length}</span>
+              <span>{basket.length}</span>
               <BiCart size={25} />
             </Link>
           </div>
